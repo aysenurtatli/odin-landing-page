@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global Styles */
+body {
+      font-family: "Roboto", sans-serif;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #1f2937;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-links li a {
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #E5E7EB;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    background-color: #1f2937;
+}
+
+/* Top Section */
+.top-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-section .text-content {
+    max-width: 450px;
+}
+
+.top-section .text-content h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.top-section .text-content p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.sign-up-btn {
+    cursor: pointer;
+    background-color: #3882f6;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.image-content {
+    max-width: 500px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+}
+
+/* Bottom Section */
+.bottom-section {
+    background-color: #fff;
+    padding: 100px 0px;
+}
+
+.bottom-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.bottom-section h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 100px 0px;
+}
+
+.quote-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+    text-align: center;
+}
+
+.quote-author {
+    font-size: 24px;
+    color: #374151;
+    text-align: right;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+    background-color: #fff;
+    padding: 50px 0px;
+}
+
+.call-to-action-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #3882f6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.call-to-action-text {
+    color: #fff;
+}
+
+.call-to-action-content .sign-up-btn {
+    border: 1px solid #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media  screen and (max-width: 992px) {
+
+    .header-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1F2937;
+        box-shadow: 0px 16px 22px -2px rgba(0,0,0,0.59);
+        -webkit-box-shadow: 0px 16px 22px -2px rgba(0,0,0,0.59);
+        -moz-box-shadow: 0px 16px 22px -2px rgba(0,0,0,0.59);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .header-links.active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .top-content .text-content {
+        text-align: center;
+    }
+
+    
+
+    .image-content img {
+        max-width: 100%;
+    }
+
+    .bottom-content {
+        padding: 0 20px;
+    }
+
+    .bottom-content h2 {
+        font-size: 24px;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .quote-section{
+        padding: 50px 20px;
+    }
+
+    .quote-text {
+        font-size: 24px;
+    }
+
+    .quote-author {
+        font-size: 18px;
+    }
+
+    .call-to-action-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+}
+
